@@ -15,12 +15,6 @@ steps:
     versionSource: 'spec'
     versionSpec: '6.x'
   displayName: 'Installing nodejs as a pre-requiste for unittest'
-- task: CmdLine@2
-  inputs:
-    script: |
-      npm install
-      npm run build
-  displayName: 'npm build and install'
 - task: Docker@2
   inputs:
     containerRegistry: 'knolanacr'
