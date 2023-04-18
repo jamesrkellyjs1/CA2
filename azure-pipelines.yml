@@ -17,7 +17,7 @@ steps:
   displayName: 'Installing nodejs as a pre-requiste for unittest'
 - task: Docker@2
   inputs:
-    containerRegistry: 'knolanacr'
+    containerRegistry: 'kanolanacr'
     repository: 'nodejs-server'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
