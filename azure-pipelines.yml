@@ -19,6 +19,9 @@ steps:
     npm install
   displayName: 'npm install'
 - script: |
+    npm install mocha
+  displayName: 'npm install mocha'
+- script: |
     npm test
   displayName: 'run unittests'
 - task: Docker@2
