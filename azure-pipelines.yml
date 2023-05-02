@@ -13,7 +13,7 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSource: 'spec'
-    versionSpec: '6.x'
+    versionSpec: '10.x'
   displayName: 'Installing nodejs as a pre-requiste for unittest'
 - script: |
     npm install
